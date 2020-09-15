@@ -1,0 +1,140 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
+  },
+  {
+    "name": "blogs",
+    "path": "/blogs",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\blogs.vue",
+    "chunkName": "pages/blogs"
+  },
+  {
+    "name": "chat-rooms",
+    "path": "/chat-rooms",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\chat-rooms.vue",
+    "chunkName": "pages/chat-rooms"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact"
+  },
+  {
+    "name": "home",
+    "path": "/home",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\home.vue",
+    "chunkName": "pages/home"
+  },
+  {
+    "name": "last-users",
+    "path": "/last-users",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\last-users.vue",
+    "chunkName": "pages/last-users"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "messages",
+    "path": "/messages",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\messages.vue",
+    "chunkName": "pages/messages"
+  },
+  {
+    "name": "online-users",
+    "path": "/online-users",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\online-users.vue",
+    "chunkName": "pages/online-users"
+  },
+  {
+    "name": "privacy",
+    "path": "/privacy",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\privacy.vue",
+    "chunkName": "pages/privacy"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\register.vue",
+    "chunkName": "pages/register"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\search.vue",
+    "chunkName": "pages/search"
+  },
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\settings.vue",
+    "chunkName": "pages/settings"
+  },
+  {
+    "name": "use-of-cookie",
+    "path": "/use-of-cookie",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\use-of-cookie.vue",
+    "chunkName": "pages/use-of-cookie"
+  },
+  {
+    "name": "actions-smiles-in",
+    "path": "/actions/smiles/in",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\actions\\\\smiles\\\\in.vue",
+    "chunkName": "pages/actions/smiles/in"
+  },
+  {
+    "name": "actions-smiles-out",
+    "path": "/actions/smiles/out",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\actions\\\\smiles\\\\out.vue",
+    "chunkName": "pages/actions/smiles/out"
+  },
+  {
+    "name": "actions-viewer-in",
+    "path": "/actions/viewer/in",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\actions\\\\viewer\\\\in.vue",
+    "chunkName": "pages/actions/viewer/in"
+  },
+  {
+    "name": "actions-viewer-out",
+    "path": "/actions/viewer/out",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\actions\\\\viewer\\\\out.vue",
+    "chunkName": "pages/actions/viewer/out"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug?",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug"
+  },
+  {
+    "name": "message-id",
+    "path": "/message/:id?",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\message\\\\_id.vue",
+    "chunkName": "pages/message/_id"
+  },
+  {
+    "name": "profile-slug",
+    "path": "/profile/:slug?",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\profile\\\\_slug.vue",
+    "chunkName": "pages/profile/_slug"
+  },
+  {
+    "name": "room-slug",
+    "path": "/room/:slug?",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\room\\\\_slug.vue",
+    "chunkName": "pages/room/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\yedek\\\\Desktop\\\\nuxt\\\\chat\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]

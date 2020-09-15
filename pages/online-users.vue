@@ -1,0 +1,114 @@
+<template>
+    <div>
+        <main class="dashboard-mp">
+            <div class="dash-tab-links">
+                <div class="container">
+                    <div class="dash-discussions mb20">
+                        <div class="main-section">
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="search-bar-main">
+                                            <h1 class="text-center">Çevrimiçi Üyeler</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-search-events">
+                                <div class="row" v-if="users.length > 0">
+                                    <div class="col-lg-3 col-md-6" v-for="(o,index) in users" :key="index">
+                                        <div class="user-data full-width">
+                                            <div class="user-profile">
+                                                <div class="userbg-dt dpbg-1">
+                                                            <nuxt-link :to="'/profile/' + o.slug">
+                                                        <div class="usr-pic">
+                                                            <img :src="'http://cdn.724chat.com/images/users/' + o.image " :alt="o.name">
+                                                        </div>
+                                                    </nuxt-link>
+                                                    </div>
+                                                <div class="user-main-details">
+                                                    <h4>{{ o.name }}</h4>
+                                                    <span> <timeago :datetime="o.created_at" :auto-update="60"></timeago></span>
+                                                </div>
+                                                <ul class="follow-msg-dt">
+                                                    <li>
+                                                        <div class="msg-dt-sm">
+                                                            <nuxt-link :to="'/profile/' + o.slug">
+                                                                <button class="msg-btn1">Mesaj At</button>
+                                                            </nuxt-link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="follow-dt-sm">
+                                                           <nuxt-link :to="'/profile/' + o.slug">
+                                                                <button class="follow-btn1">Takip Et</button>
+                                                            </nuxt-link>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="profile-link">
+                                                           <nuxt-link :to="'/profile/' + o.slug">
+                                                        Profili Görüntüle
+                                                    </nuxt-link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-else>
+                                    <p style="text-align: center;width:100%;" v-if="lang === 'tr'">Bir hata oluştu.</p>
+                                    <p style="text-align: center;width:100%;" v-else>Error. Please try again.</p>
+                                </div>
+                                <div class="container">
+                                    <paginate :meta="meta" v-on:pageChange="get"></paginate>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</template>
+<script>
+    import Paginate from "../components/Paginate";
+    import axios from 'axios';
+
+    export default {
+        name: "last", props: ["lang"], components: {Paginate}, data ()
+        {
+            return {
+                users: [], meta: {}
+            }
+        }, 
+        created(){
+            this.get(1);
+        },
+        methods: {
+            get (page = 1)
+            {
+                var data = {
+                    status: true
+                };
+                axios.post("/api/get/onlines?page=" + page, data).then((res) => {
+                    this.users = res.data.data;
+                    this.meta = {
+                        current_page: res.data.current_page,
+                        from: res.data.from,
+                        last_page: res.data.last_page,
+                        last_page_url: res.data.last_page_url,
+                        next_page_url: res.data.next_page_url,
+                        path: res.data.path,
+                        per_page: res.data.per_page,
+                        prev_page_url: res.data.prev_page_url,
+                        to: res.data.to,
+                        total: res.data.total,
+                    };
+                    $("html, body").animate({scrollTop: 0}, "slow");
+                });
+            }
+        }
+    }
+</script>
+<style scoped>
+</style>

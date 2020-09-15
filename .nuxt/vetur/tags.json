@@ -1,0 +1,26 @@
+{
+  "Paginate": {
+    "description": "Auto imported from components/Paginate.vue"
+  },
+  "LazyPaginate": {
+    "description": "Auto imported from components/Paginate.vue"
+  },
+  "SendMessageModal": {
+    "description": "Auto imported from components/SendMessageModal.vue"
+  },
+  "LazySendMessageModal": {
+    "description": "Auto imported from components/SendMessageModal.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/static/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/static/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/static/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/static/Header.vue"
+  }
+}
